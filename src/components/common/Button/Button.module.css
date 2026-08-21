@@ -1,0 +1,48 @@
+.button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+
+  width: 100%;
+  max-width: none;
+  min-height: 39px;
+
+  padding: 6px 12px;
+
+  border: 1px solid var(--color-milky);
+  border-radius: 999px;
+
+  background: var(--gradient-button);
+  color: var(--color-white);
+
+  font-family: var(--font-viaoda-libre);
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 1;
+
+  cursor: pointer;
+
+  transition:
+    opacity 0.2s ease,
+    transform 0.2s ease;
+}
+
+.button:hover {
+  opacity: 0.9;
+}
+
+.button:active {
+  transform: scale(0.98);
+}
+
+.button:focus-visible {
+  outline: 2px solid var(--color-gold-light);
+  outline-offset: 3px;
+}
+
+@media (min-width: 768px) {
+  .button {
+    width: auto;
+    min-width: 220px;
+  }
+}

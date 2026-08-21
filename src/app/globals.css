@@ -1,7 +1,7 @@
 :root {
   /* Fonts */
-  --font-heading: "Viaoda Libre", serif;
-  --font-body: "Montserrat", sans-serif;
+  --font-main: var(--font-viaoda-libre);
+  --font-secondary: var(--font-montserrat);
 
   /* Main colors */
   --color-white-chalk: #d9d9d9;
@@ -33,6 +33,19 @@
   /* Layout */
   --container-width: 1200px;
   --container-padding: 20px;
+
+  /* Gradients */
+  --gradient-button: linear-gradient(
+    62deg,
+    var(--color-gold-dark) 0%,
+    var(--color-gold) 100%
+  );
+
+  --gradient-footer: linear-gradient(
+    264deg,
+    var(--color-gold) 0%,
+    var(--color-gold-light) 100%
+  );
 }
 
 *,
@@ -52,14 +65,20 @@ body {
 }
 
 body {
+  --font-main: var(--font-viaoda-libre);
+  --font-secondary: var(--font-montserrat);
+
   min-height: 100vh;
+  overflow-x: hidden;
 
   background: var(--color-white);
   color: var(--color-text);
 
-  font-family: var(--font-body);
+  font-family: var(--font-main);
   font-weight: 400;
+  line-height: 1.5;
 }
+
 h1,
 h2,
 h3,
@@ -93,6 +112,7 @@ img,
 svg {
   display: block;
   max-width: 100%;
+  height: auto;
 }
 
 ul,
@@ -100,4 +120,12 @@ ol {
   margin: 0;
   padding: 0;
   list-style: none;
+}
+
+h1 {
+  font-family: var(--font-viaoda-libre);
+}
+
+p {
+  font-family: var(--font-montserrat);
 }
