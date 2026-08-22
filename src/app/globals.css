@@ -33,6 +33,7 @@
   /* Layout */
   --container-width: 1200px;
   --container-padding: 20px;
+  --section-spacing: 64px;
 
   /* Gradients */
   --gradient-button: linear-gradient(

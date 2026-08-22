@@ -1,0 +1,61 @@
+.history {
+  background-color: var(--color-milky-orange);
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+}
+
+.heading {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+
+  margin-bottom: 24px;
+}
+
+.title {
+  font-family: var(--font-main);
+  font-size: 32px;
+  font-weight: 400;
+
+  line-height: 1.5;
+  text-align: center;
+  text-transform: uppercase;
+
+  color: var(--color-text);
+}
+
+.subtitle {
+  font-family: var(--font-main);
+  font-size: 20px;
+  line-height: 1.5;
+  text-align: center;
+  color: var(--color-brown);
+}
+
+.imageWrapper {
+  position: relative;
+
+  width: 100%;
+  aspect-ratio: 335 / 300;
+
+  overflow: hidden;
+  border-radius: 16px;
+}
+
+.image {
+  object-fit: cover;
+  object-position: center;
+}
+
+.description {
+  margin-top: 15px;
+  margin-bottom: 24px;
+  text-align: center;
+  font-family: var(--font-main);
+  font-size: 20px;
+  line-height: 1;
+  color: var(--color-gold-dark);
+}

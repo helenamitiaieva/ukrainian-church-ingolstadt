@@ -6,12 +6,14 @@ type ButtonProps = {
   children: ReactNode;
   href?: string;
   type?: "button" | "submit" | "reset";
+  onClick?: () => void;
 };
 
 export default function Button({
   children,
   href,
   type = "button",
+  onClick,
 }: ButtonProps) {
   if (href) {
     return (
@@ -22,7 +24,7 @@ export default function Button({
   }
 
   return (
-    <button type={type} className={styles.button}>
+    <button type={type} className={styles.button} onClick={onClick}>
       {children}
     </button>
   );
