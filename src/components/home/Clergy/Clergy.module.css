@@ -1,0 +1,107 @@
+.clergy {
+  position: relative;
+  overflow: hidden;
+
+  background: var(--color-white);
+}
+
+.content {
+  position: relative;
+  z-index: 2;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.decor {
+  display: block;
+
+  width: 100%;
+  max-width: 300px;
+  height: auto;
+
+  margin-bottom: 16px;
+}
+
+.title {
+  margin-bottom: 32px;
+
+  font-family: var(--font-main);
+  font-weight: 400;
+  font-size: 36px;
+  line-height: 1.1;
+  letter-spacing: -0.01em;
+
+  text-align: center;
+  text-transform: uppercase;
+
+  color: var(--color-gold-dark);
+}
+
+.cards {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 16px;
+}
+
+.backgroundTop,
+.backgroundBottom {
+  position: absolute;
+  z-index: 1;
+
+  width: 500px;
+  height: auto;
+
+  opacity: 0.12;
+
+  pointer-events: none;
+  user-select: none;
+}
+
+.backgroundTop {
+  top: 0;
+  right: -200px;
+}
+
+.backgroundBottom {
+  bottom: 0;
+  left: -10px;
+}
+
+@media (min-width: 768px) {
+  .title {
+    font-size: 42px;
+    margin-bottom: 40px;
+  }
+
+  .cards {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 24px;
+  }
+
+  .backgroundTop {
+    left: 500px;
+    width: 600px;
+  }
+
+  .backgroundBottom {
+    width: 0px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .title {
+    font-size: 48px;
+  }
+
+  .cards {
+    gap: 32px;
+  }
+
+  .backgroundTop {
+    width: 800px;
+  }
+}

@@ -1,3 +1,4 @@
+import Clergy from "@/components/home/Clergy/Clergy";
 import "./globals.css";
 import Hero from "@/components/home/Hero/Hero";
 import HistoryPreview from "@/components/home/HistoryPreview/HistoryPreview";
@@ -9,6 +10,7 @@ export default function Home() {
       <Hero />
       <HistoryPreview />
       <Schedule />
+      <Clergy />
     </main>
   );
 }
