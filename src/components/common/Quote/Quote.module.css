@@ -1,0 +1,38 @@
+.quote {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0;
+  text-align: center;
+}
+
+.quoteContent {
+  width: fit-content;
+  max-width: 100%;
+}
+
+.decor {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.text {
+  max-width: 335px;
+  font-family: var(--font-main);
+  font-size: 20px;
+}
+
+.line {
+  display: block;
+  width: 50px;
+  height: 3px;
+  margin-top: 16px;
+}
+
+.source {
+  margin-top: 10px;
+  font-size: 18px;
+  font-style: normal;
+  color: var(--color-gold-light);
+}

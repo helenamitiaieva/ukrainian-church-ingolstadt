@@ -1,9 +1,9 @@
 "use client";
 
-import { useEffect } from "react";
-
 import styles from "./ScheduleModal.module.css";
 import Image from "next/image";
+import { useLockOverlay } from "@/hooks/useLockOverlay";
+import CloseIcon from "@/components/common/icons/CloseIcon";
 
 type ScheduleModalProps = {
   isOpen: boolean;
@@ -12,36 +12,24 @@ type ScheduleModalProps = {
   type: "pdf" | "image";
 };
 
+function getCurrentMonth() {
+  return new Intl.DateTimeFormat("uk-UA", {
+    month: "long",
+  }).format(new Date());
+}
+
 export default function ScheduleModal({
   isOpen,
   onClose,
   file,
   type,
 }: ScheduleModalProps) {
-  function getCurrentMonth() {
-    return new Intl.DateTimeFormat("uk-UA", {
-      month: "long",
-    }).format(new Date());
-  }
+  useLockOverlay({
+    isOpen,
+    onClose,
+  });
+
   const currentMonth = getCurrentMonth();
-  useEffect(() => {
-    if (!isOpen) return;
-
-    document.body.style.overflow = "hidden";
-
-    const handleKeyDown = (event: KeyboardEvent) => {
-      if (event.key === "Escape") {
-        onClose();
-      }
-    };
-
-    window.addEventListener("keydown", handleKeyDown);
-
-    return () => {
-      document.body.style.overflow = "";
-      window.removeEventListener("keydown", handleKeyDown);
-    };
-  }, [isOpen, onClose]);
 
   if (!isOpen) {
     return null;
@@ -70,13 +58,7 @@ export default function ScheduleModal({
             aria-label="Закрити розклад"
             onClick={onClose}
           >
-            <svg
-              className={styles.closeIcon}
-              viewBox="0 0 32 32"
-              aria-hidden="true"
-            >
-              <use href="/icons/sprite.svg#icon-x" />
-            </svg>
+            <CloseIcon className={styles.closeIcon} />
           </button>
         </div>
 

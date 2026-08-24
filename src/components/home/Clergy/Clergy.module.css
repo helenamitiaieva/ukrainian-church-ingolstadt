@@ -85,6 +85,7 @@
   .backgroundTop {
     left: 500px;
     width: 600px;
+    top: -20px;
   }
 
   .backgroundBottom {
@@ -99,9 +100,5 @@
 
   .cards {
     gap: 32px;
-  }
-
-  .backgroundTop {
-    width: 800px;
   }
 }

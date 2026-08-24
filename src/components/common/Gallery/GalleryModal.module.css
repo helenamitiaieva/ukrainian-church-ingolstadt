@@ -1,0 +1,182 @@
+.overlay {
+  position: fixed;
+  z-index: 1000;
+
+  inset: 0;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  padding: 20px;
+
+  background: rgba(0, 0, 0, 0.8);
+}
+
+.modal {
+  position: relative;
+
+  width: 100%;
+  max-width: 1100px;
+}
+
+.close {
+  position: absolute;
+  z-index: 10;
+
+  top: -50px;
+  right: 0px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  width: 40px;
+  height: 40px;
+
+  padding: 0;
+
+  border: 0;
+  background: transparent;
+
+  cursor: pointer;
+}
+
+.closeIcon {
+  display: block;
+
+  width: 32px;
+  height: 32px;
+}
+
+.slider {
+  width: 100%;
+}
+
+.figure {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 16px;
+
+  margin: 0;
+}
+
+.imageWrapper {
+  position: relative;
+
+  width: 100%;
+  aspect-ratio: 4 / 3;
+
+  overflow: hidden;
+}
+
+.image {
+  object-fit: contain;
+}
+
+.description {
+  padding-inline: 20px;
+
+  font-family: var(--font-family);
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 140%;
+
+  text-align: center;
+
+  color: var(--color-milky);
+}
+
+/* Swiper arrows */
+
+.slider :global(.swiper-button-prev),
+.slider :global(.swiper-button-next) {
+  display: none;
+}
+
+.closeIcon {
+  transition:
+    transform 0.2s ease,
+    opacity 0.2s ease;
+}
+
+.close:hover .closeIcon,
+.close:active .closeIcon {
+  opacity: 0.75;
+}
+
+.close:active .closeIcon {
+  transform: scale(0.94);
+}
+
+.modal {
+  position: relative;
+  width: min(900px, 100%);
+
+  margin-inline: auto;
+}
+
+.navButton {
+  position: absolute;
+  z-index: 20;
+
+  top: 50%;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  width: 44px;
+  height: 44px;
+
+  padding: 0;
+  border: 0;
+  background: transparent;
+  fill: var(--color-milky);
+
+  transform: translateY(-50%);
+  transition: all 0.2s ease;
+
+  cursor: pointer;
+}
+
+.navButton:hover {
+  opacity: 0.5;
+}
+
+.prevButton {
+  left: -10px;
+}
+
+.nextButton {
+  right: -10px;
+}
+
+.navIcon {
+  width: 32px;
+  height: 32px;
+}
+
+@media (min-width: 768px) {
+  .modal {
+    padding-inline: 64px;
+  }
+
+  .slider :global(.swiper-button-prev),
+  .slider :global(.swiper-button-next) {
+    display: flex;
+
+    color: var(--milky);
+  }
+
+  .description {
+    font-size: 20px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .imageWrapper {
+    aspect-ratio: 16 / 10;
+  }
+}
