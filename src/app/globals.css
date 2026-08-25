@@ -37,9 +37,9 @@
 
   /* Gradients */
   --gradient-button: linear-gradient(
-    62deg,
-    var(--color-gold-dark) 0%,
-    var(--color-gold) 100%
+    89.59deg,
+    var(--color-gold-dark) 2.69%,
+    var(--color-gold) 96.98%
   );
 
   --gradient-footer: linear-gradient(

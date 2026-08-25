@@ -7,6 +7,7 @@ import HomeQuote from "@/components/home/HomeQuote/HomeQuote";
 import Section from "@/components/common/Section/Section";
 import Gallery from "@/components/common/Gallery/Gallery";
 import { homeGalleryImages } from "@/data/homeGalleryImages";
+import Sacraments from "@/components/home/Sacraments/Sacraments";
 
 export default function Home() {
   return (
@@ -19,6 +20,7 @@ export default function Home() {
       <Section>
         <Gallery images={homeGalleryImages} />
       </Section>
+      <Sacraments />
     </main>
   );
 }
