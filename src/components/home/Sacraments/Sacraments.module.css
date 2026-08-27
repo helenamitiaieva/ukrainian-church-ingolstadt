@@ -56,53 +56,67 @@
 
 .intro {
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
+  grid-template-columns: repeat(2, minmax(0, 1fr));
   gap: 8px;
 
   margin-top: 10px;
 }
 
-.introText,
-.introImageWrapper {
-  height: 170px;
-  border-radius: 8px;
-  overflow: hidden;
+.intro > * {
+  height: 185px;
 }
 
-.introText {
+.introTextBackground {
+  width: 100%;
+  height: 100%;
+
+  border-radius: 8px;
+
+  background: linear-gradient(89.59deg, #996c1e 4.64%, #c8a04a 94.78%);
+}
+
+.introTextContent {
   display: flex;
   align-items: center;
   justify-content: center;
-  color: var(--color-milky);
-  font-weight: 400;
-  font-size: 12px;
+
+  width: 100%;
+  height: 100%;
 
   padding: 16px;
 
-  background: var(--gradient-button);
+  color: var(--color-milky);
+  font-size: 12px;
+  font-weight: 400;
+  text-align: center;
 }
 
-.introText p {
+.introTextContent p {
   margin: 0;
-  text-align: center;
 }
 
 .introImageWrapper {
   position: relative;
+
+  width: 100%;
+  height: 100%;
+
   overflow: hidden;
+  border-radius: 8px;
 }
 
 .introImage {
   object-fit: cover;
 }
-.tabs {
-  display: flex;
-  align-items: center;
-  justify-content: center;
 
-  gap: 8px;
+.tabs {
+  display: grid;
+
+  grid-template-columns: repeat(7, 1fr);
 
   width: 100%;
+
+  gap: 8px;
 
   padding-block: 10px;
 }
@@ -115,8 +129,10 @@
   align-items: center;
   justify-content: center;
 
-  width: 46px;
-  height: 36px;
+  width: 100%;
+  min-height: 36px;
+
+  min-width: 0;
 
   padding: 0;
 
@@ -207,6 +223,10 @@
 
   gap: 8px;
 }
+.leftColumn > *,
+.rightColumn > * {
+  width: 100%;
+}
 
 .leftColumn {
   grid-template-rows: 120px 160px 36px;
@@ -237,7 +257,9 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
-
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
   padding: 16px;
 
   text-align: center;
@@ -250,6 +272,7 @@
   color: var(--color-milky);
   font-weight: 400;
   font-size: 18px;
+  line-height: 1.2;
 }
 
 .cardText {
@@ -262,4 +285,58 @@
 .moreButton {
   width: 100%;
   border-radius: 8px;
+}
+
+.heroAnimationWrapper {
+  position: relative;
+  width: 100%;
+  height: 265px;
+
+  overflow: hidden;
+  border-radius: 8px;
+}
+
+.heroTextAnimation {
+  position: absolute;
+  inset: 0;
+  z-index: 5;
+
+  pointer-events: none;
+}
+
+.heroAnimation {
+  width: 100%;
+  height: 265px;
+  overflow: hidden;
+  border-radius: 8px;
+}
+
+.cardSmall {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+.cardLarge {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+.imageCard {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  border-radius: 8px;
+}
+
+.image {
+  object-fit: cover;
+}
+
+.leftColumn,
+.rightColumn {
+  display: grid;
+  gap: 8px;
 }

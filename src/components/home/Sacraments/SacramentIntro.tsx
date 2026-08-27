@@ -8,22 +8,24 @@ type SacramentIntroProps = {
   sacrament: Sacrament;
 };
 
-export default function SacramentIntro({ sacrament }: SacramentIntroProps) {
+export function SacramentIntroText({ sacrament }: SacramentIntroProps) {
   return (
-    <div className={styles.intro}>
-      <div className={styles.introText}>
-        <p>{sacrament.introText}</p>
-      </div>
+    <div className={styles.introTextContent}>
+      <p>{sacrament.introText}</p>
+    </div>
+  );
+}
 
-      <div className={styles.introImageWrapper}>
-        <Image
-          src={sacrament.introImage}
-          alt={sacrament.introImageAlt}
-          fill
-          sizes="50vw"
-          className={styles.introImage}
-        />
-      </div>
+export function SacramentIntroImage({ sacrament }: SacramentIntroProps) {
+  return (
+    <div className={styles.introImageWrapper}>
+      <Image
+        src={sacrament.introImage}
+        alt={sacrament.introImageAlt}
+        fill
+        sizes="50vw"
+        className={styles.introImage}
+      />
     </div>
   );
 }

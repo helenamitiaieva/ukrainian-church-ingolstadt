@@ -82,7 +82,7 @@ export const sacraments: Sacrament[] = [
     cards: [
       {
         type: "text",
-        text: "««Ви маєте помазання від Святого» (1 Ів. 2:20)",
+        text: "««Ви маєте помазання від Святого» 1 Ів. 2:20)",
       },
       {
         type: "image",
@@ -108,12 +108,12 @@ export const sacraments: Sacrament[] = [
     id: "confession",
 
     title: "Таїнство Покаяння",
-    subtitle: "Примирення з Богом",
+    subtitle: "Шлях покаяння",
     icon: "icon-confession",
     heroImage: "/images/home/sacraments/confession/hero.webp",
 
     introText:
-      "У Таїнстві Покаяння людина щиро визнає свої гріхи перед Богом і через молитву священника отримує прощення та духовне оновлення.",
+      "У Таїнстві Сповіді людина щиро кається у своїх гріхах перед Богом у присутності священника та отримує прощення.",
 
     introImage: "/images/home/sacraments/confession/intro.webp",
     introImageAlt: "Таїнство Покаяння",
@@ -121,12 +121,12 @@ export const sacraments: Sacrament[] = [
     cards: [
       {
         type: "text",
-        text: "«Кому відпустите гріхи — відпустяться їм» (Ін. 20:23)",
+        text: "«Коли визнаємо гріхи наші, то Він, вірний і праведний, простить нам гріхи.» 1 Ів. 1:9",
       },
       {
         type: "image",
         src: "/images/home/sacraments/confession/card-01.webp",
-        alt: "Таїнство Покаяння у храмі",
+        alt: "Духовне оновлення",
       },
       {
         type: "image",
@@ -135,8 +135,8 @@ export const sacraments: Sacrament[] = [
       },
       {
         type: "text",
-        title: "Повернення до Бога",
-        text: "Щире покаяння відновлює духовне життя людини та її єдність із Богом.",
+        title: "Духовне оновлення",
+        text: "Щира сповідь допомагає усвідомити свої помилки, отримати прощення та зробити крок до духовного оновлення.",
       },
     ],
 
@@ -147,12 +147,12 @@ export const sacraments: Sacrament[] = [
     id: "eucharist",
 
     title: "Таїнство Євхаристії",
-    subtitle: "Єднання з Христом",
+    subtitle: "Єднання з Христом у Євхаристії",
     icon: "icon-eucharist",
     heroImage: "/images/home/sacraments/eucharist/hero.webp",
 
     introText:
-      "У Таїнстві Євхаристії вірні причащаються Тіла і Крові Христових, єднаючись із Господом та всією Церквою.",
+      "У Таїнстві Причастя християнин під виглядом хліба і вина приймає Тіло і Кров Христові, єднаючись із Ним.",
 
     introImage: "/images/home/sacraments/eucharist/intro.webp",
     introImageAlt: "Таїнство Євхаристії",
@@ -160,7 +160,7 @@ export const sacraments: Sacrament[] = [
     cards: [
       {
         type: "text",
-        text: "«Хто їсть Моє Тіло і п’є Мою Кров, той у Мені перебуває, а Я в ньому» (Ін. 6:56)",
+        text: "«Хто споживає Моє Тіло і п’є Мою Кров, той у Мені перебуває, і Я в ньому.» Ів. 6:56",
       },
       {
         type: "image",
@@ -174,8 +174,8 @@ export const sacraments: Sacrament[] = [
       },
       {
         type: "text",
-        title: "Чаша життя",
-        text: "У Святому Причасті християнин найтісніше єднається з Христом.",
+        title: "Єднання з Христом",
+        text: "Через Святе Причастя людина єднається з Христом, приймаючи Його Тіло і Кров для духовного життя та зростання у вірі.",
       },
     ],
 
@@ -183,54 +183,15 @@ export const sacraments: Sacrament[] = [
   },
 
   {
-    id: "marriage",
-
-    title: "Таїнство Вінчання",
-    subtitle: "Благословення подружнього життя",
-    icon: "icon-marriage",
-    heroImage: "/images/home/sacraments/marriage/hero.webp",
-
-    introText:
-      "У Таїнстві Вінчання чоловік і жінка отримують Боже благословення на спільне подружнє життя, любов, вірність і створення християнської родини.",
-
-    introImage: "/images/home/sacraments/marriage/intro.webp",
-    introImageAlt: "Таїнство Вінчання",
-
-    cards: [
-      {
-        type: "text",
-        text: "«Так що вони вже не двоє, але одне тіло» (Мт. 19:6)",
-      },
-      {
-        type: "image",
-        src: "/images/home/sacraments/marriage/card-01.webp",
-        alt: "Таїнство Вінчання у храмі",
-      },
-      {
-        type: "image",
-        src: "/images/home/sacraments/marriage/card-02.webp",
-        alt: "Молодята під час Вінчання",
-      },
-      {
-        type: "text",
-        title: "Єдність у Христі",
-        text: "Подружжя покликане разом зростати в любові, вірі та взаємній підтримці.",
-      },
-    ],
-
-    href: "/sacraments/marriage",
-  },
-
-  {
     id: "anointing",
 
-    title: "Таїнство Єлеопомазання",
+    title: "Таїнство Єлеосвячення (Соборування)",
     subtitle: "Молитва про зцілення",
     icon: "icon-anointing",
     heroImage: "/images/home/sacraments/anointing/hero.webp",
 
     introText:
-      "У Таїнстві Єлеопомазання Церква молиться за духовне й тілесне зцілення людини та помазує її освяченим єлеєм.",
+      "Через молитву та помазання освяченим єлеєм людина отримує Божу благодать для зцілення душі й тіла.",
 
     introImage: "/images/home/sacraments/anointing/intro.webp",
     introImageAlt: "Таїнство Єлеопомазання",
@@ -238,7 +199,7 @@ export const sacraments: Sacrament[] = [
     cards: [
       {
         type: "text",
-        text: "«І молитва віри спасе недужого, і Господь підійме його» (Як. 5:15)",
+        text: "«Нехай помоляться над ним, помазавши його оливою в ім’я Господнє.» Як. 5:14",
       },
       {
         type: "image",
@@ -261,6 +222,45 @@ export const sacraments: Sacrament[] = [
   },
 
   {
+    id: "marriage",
+
+    title: "Таїнство Вінчання",
+    subtitle: "Благословення подружнього життя",
+    icon: "icon-marriage",
+    heroImage: "/images/home/sacraments/marriage/hero.webp",
+
+    introText:
+      "У Таїнстві Вінчання Церква благословляє чоловіка і жінку на спільне подружнє життя та призиває на них Божу благодать.",
+
+    introImage: "/images/home/sacraments/marriage/intro.webp",
+    introImageAlt: "Таїнство Вінчання",
+
+    cards: [
+      {
+        type: "text",
+        text: "«Що Бог з’єднав, людина нехай не розлучає.» Мт. 19:6",
+      },
+      {
+        type: "image",
+        src: "/images/home/sacraments/marriage/card-01.webp",
+        alt: "Таїнство Вінчання у храмі",
+      },
+      {
+        type: "image",
+        src: "/images/home/sacraments/marriage/card-02.webp",
+        alt: "Молодята під час Вінчання",
+      },
+      {
+        type: "text",
+        title: "Благословення подружжя",
+        text: "Божа благодать зміцнює подружжя у любові, вірності та спільному християнському житті.",
+      },
+    ],
+
+    href: "/sacraments/marriage",
+  },
+
+  {
     id: "holy-orders",
 
     title: "Таїнство Священства",
@@ -277,7 +277,7 @@ export const sacraments: Sacrament[] = [
     cards: [
       {
         type: "text",
-        text: "«Не ви Мене вибрали, але Я вибрав вас і поставив вас» (Ін. 15:16)",
+        text: "«Розпалюй дар Божий, який у тобі через покладання рук моїх.» 2 Тим. 1:6",
       },
       {
         type: "image",

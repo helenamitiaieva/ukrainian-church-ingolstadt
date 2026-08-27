@@ -1,0 +1,236 @@
+.wrapper {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+
+.layer {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+}
+
+/* ===== СТАРАЯ КАРТОЧКА ===== */
+
+.previous {
+  z-index: 1;
+  animation-duration: 650ms;
+  animation-timing-function: ease-in-out;
+  animation-fill-mode: forwards;
+}
+
+/* Старый текст уходит немного быстрее */
+
+.previousContent {
+  z-index: 2;
+  animation-duration: 450ms;
+  animation-timing-function: ease-in-out;
+  animation-fill-mode: forwards;
+}
+
+/* ===== НОВАЯ КАРТОЧКА ===== */
+
+.currentBackground {
+  z-index: 3;
+
+  animation-duration: 900ms;
+  animation-delay: 500ms;
+  animation-timing-function: ease-out;
+  animation-fill-mode: both;
+}
+
+/* Новый текст появляется ПОСЛЕ картинки */
+
+.currentContent {
+  z-index: 4;
+
+  animation-duration: 900ms;
+  animation-delay: 500ms;
+  animation-timing-function: ease-out;
+  animation-fill-mode: both;
+}
+
+.static {
+  z-index: 3;
+}
+
+/* ========================================
+   RIGHT
+   старое → вправо
+   новое → приходит слева
+======================================== */
+
+.previous-right {
+  animation-name: exitRight;
+}
+
+.current-right {
+  animation-name: enterFromLeft;
+}
+
+.previousContent.previous-right {
+  animation-name: textExitRight;
+}
+
+.currentContent.current-right {
+  animation-name: textEnterFromLeft;
+}
+
+/* ========================================
+   LEFT
+======================================== */
+
+.previous-left {
+  animation-name: exitLeft;
+}
+
+.current-left {
+  animation-name: enterFromRight;
+}
+
+/* ========================================
+   TOP
+======================================== */
+
+.previous-top {
+  animation-name: exitTop;
+}
+
+.current-top {
+  animation-name: enterFromBottom;
+}
+
+/* ========================================
+   BOTTOM
+======================================== */
+
+.previous-bottom {
+  animation-name: exitBottom;
+}
+
+.current-bottom {
+  animation-name: enterFromTop;
+}
+
+/* ========================================
+   CARD ANIMATIONS
+======================================== */
+
+@keyframes exitRight {
+  from {
+    transform: translateX(0);
+  }
+
+  to {
+    transform: translateX(100%);
+  }
+}
+
+@keyframes enterFromLeft {
+  from {
+    transform: translateX(-100%);
+  }
+
+  to {
+    transform: translateX(0);
+  }
+}
+
+@keyframes exitLeft {
+  from {
+    transform: translateX(0);
+  }
+
+  to {
+    transform: translateX(-100%);
+  }
+}
+
+@keyframes enterFromRight {
+  from {
+    transform: translateX(100%);
+  }
+
+  to {
+    transform: translateX(0);
+  }
+}
+
+@keyframes exitTop {
+  from {
+    transform: translateY(0);
+  }
+
+  to {
+    transform: translateY(-100%);
+  }
+}
+
+@keyframes enterFromBottom {
+  from {
+    transform: translateY(100%);
+  }
+
+  to {
+    transform: translateY(0);
+  }
+}
+
+@keyframes exitBottom {
+  from {
+    transform: translateY(0);
+  }
+
+  to {
+    transform: translateY(100%);
+  }
+}
+
+@keyframes enterFromTop {
+  from {
+    transform: translateY(-100%);
+  }
+
+  to {
+    transform: translateY(0);
+  }
+}
+
+/* ========================================
+   TEXT — RIGHT
+======================================== */
+
+@keyframes textExitRight {
+  from {
+    transform: translateX(0);
+    opacity: 1;
+  }
+
+  to {
+    transform: translateX(40px);
+    opacity: 0;
+  }
+}
+
+@keyframes textEnterFromLeft {
+  from {
+    transform: translateX(-50px);
+    opacity: 0;
+  }
+
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .previous,
+  .previousContent,
+  .currentBackground,
+  .currentContent {
+    animation: none;
+  }
+}
