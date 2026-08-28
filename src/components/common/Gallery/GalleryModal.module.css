@@ -9,8 +9,7 @@
   justify-content: center;
 
   padding: 20px;
-
-  background: rgba(0, 0, 0, 0.8);
+  background: rgba(248, 245, 239, 0.92);
 }
 
 .modal {
@@ -85,7 +84,7 @@
 
   text-align: center;
 
-  color: var(--color-milky);
+  color: var(--color-gold-dark);
 }
 
 /* Swiper arrows */
@@ -133,7 +132,7 @@
   padding: 0;
   border: 0;
   background: transparent;
-  fill: var(--color-milky);
+  fill: var(--color-gold-dark);
 
   transform: translateY(-50%);
   transition: all 0.2s ease;
