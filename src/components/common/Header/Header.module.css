@@ -68,6 +68,7 @@
 
   width: 100%;
   height: 100dvh;
+  color: var(--color-gold-dark);
 
   background: rgba(248, 245, 239, 0.92);
 
@@ -107,6 +108,12 @@
 
   font-size: 20px;
   line-height: 1.2;
+  opacity: 1;
+  transition: opacity 0.5s ease;
+}
+
+.mobileNavList a:hover {
+  opacity: 0.5;
 }
 
 @media (min-width: 1024px) {

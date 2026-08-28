@@ -27,10 +27,11 @@ export default function Header() {
           </Link>
 
           <nav className={styles.desktopNav}>
-            <Link href="/">Головна</Link>
-            <Link href="/history">Історія</Link>
-            <Link href="/sacraments">Таїнства</Link>
-            <Link href="/contacts">Контакти</Link>
+            <Link href="/#top">Головна</Link>
+            <Link href="/#history">Історія</Link>
+            <Link href="/#schedule">Розклад</Link>
+            <Link href="/#sacraments">Таїнства</Link>
+            <Link href="/#contacts">Контакти</Link>
           </nav>
 
           <button
@@ -55,25 +56,30 @@ export default function Header() {
         <Container>
           <ul className={styles.mobileNavList}>
             <li>
-              <Link href="/" onClick={closeMenu}>
+              <Link href="/#top" onClick={closeMenu}>
                 Головна
               </Link>
             </li>
 
             <li>
-              <Link href="/history" onClick={closeMenu}>
+              <Link href="/#history" onClick={closeMenu}>
                 Історія
+              </Link>
+            </li>
+            <li>
+              <Link href="/#schedule" onClick={closeMenu}>
+                Розклад
               </Link>
             </li>
 
             <li>
-              <Link href="/sacraments" onClick={closeMenu}>
+              <Link href="/#sacraments" onClick={closeMenu}>
                 Таїнства
               </Link>
             </li>
 
             <li>
-              <Link href="/contacts" onClick={closeMenu}>
+              <Link href="/#contacts" onClick={closeMenu}>
                 Контакти
               </Link>
             </li>

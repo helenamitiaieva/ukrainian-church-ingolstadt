@@ -9,10 +9,11 @@ import Gallery from "@/components/common/Gallery/Gallery";
 import { homeGalleryImages } from "@/data/homeGalleryImages";
 import Sacraments from "@/components/home/Sacraments/Sacraments";
 import FAQ from "@/components/common/FAQ/FAQ";
+import Contacts from "@/components/home/Contacts/Contacts";
 
 export default function Home() {
   return (
-    <main>
+    <main id="top">
       <Hero />
       <HistoryPreview />
       <Schedule />
@@ -22,6 +23,7 @@ export default function Home() {
         <Gallery images={homeGalleryImages} />
       </Section>
       <Sacraments />
+      <Contacts />
       <FAQ page="home" />
     </main>
   );

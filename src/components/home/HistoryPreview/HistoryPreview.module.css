@@ -39,7 +39,10 @@
   position: relative;
 
   width: 100%;
-  aspect-ratio: 335 / 300;
+  max-width: 450px;
+  aspect-ratio: 344 / 240;
+
+  margin-inline: auto;
 
   overflow: hidden;
   border-radius: 16px;
@@ -58,4 +61,8 @@
   font-size: 20px;
   line-height: 1;
   color: var(--color-gold-dark);
+}
+
+.button {
+  margin: 0 auto;
 }

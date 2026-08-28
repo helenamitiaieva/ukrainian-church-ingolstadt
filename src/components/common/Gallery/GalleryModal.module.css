@@ -126,22 +126,25 @@
   align-items: center;
   justify-content: center;
 
-  width: 44px;
-  height: 44px;
+  width: 32px;
+  height: 32px;
 
   padding: 0;
   border: 0;
-  background: transparent;
-  fill: var(--color-gold-dark);
+  background-color: transparent;
+  fill: var(--color-text);
 
   transform: translateY(-50%);
   transition: all 0.2s ease;
-
+  border-radius: 50%;
   cursor: pointer;
 }
 
 .navButton:hover {
   opacity: 0.5;
+  opacity: 1;
+  fill: var(--color-milky);
+  background-color: #c8a04a;
 }
 
 .prevButton {

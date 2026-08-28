@@ -31,7 +31,9 @@ export default function HistoryPreview() {
 
           <p className={styles.description}>1945 р. – заснування храму</p>
 
-          <Button href="/history">Читати повну історію</Button>
+          <Button href="/history" className={styles.button}>
+            Читати повну історію
+          </Button>
         </div>
       </Container>
     </Section>

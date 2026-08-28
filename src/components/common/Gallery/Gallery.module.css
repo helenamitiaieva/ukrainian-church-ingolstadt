@@ -60,8 +60,11 @@
 
   background: transparent;
   border: 1px solid #c8a04a;
+  transition: all 0.5s ease;
+}
 
-  opacity: 1;
+.slider :global(.swiper-pagination-bullet):hover {
+  background: var(--color-gold-light);
 }
 
 .slider :global(.swiper-pagination-bullet-active) {
@@ -102,6 +105,7 @@
   border: none;
 
   background: transparent;
+  border-radius: 50%;
 
   transform: translateY(-100%);
 
@@ -121,17 +125,18 @@
 
   height: 24px;
 
-  fill: var(--color-milky);
+  fill: var(--color-text);
+  border-radius: 50%;
   opacity: 0.8;
 
-  transition:
-    color 0.2s ease,
-    transform 0.2s ease;
+  transition: all 0.2s ease;
 }
 
 .navButton:hover .navIcon {
   opacity: 1;
+  fill: var(--color-milky);
   transform: scale(1.08);
+  background-color: #c8a04a;
 }
 
 /* Tablet */

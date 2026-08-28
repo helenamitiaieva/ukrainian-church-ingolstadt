@@ -27,6 +27,14 @@ function getNextWeekday(currentDate: Date, targetDay: number) {
   return date;
 }
 
+function getCurrentMonth() {
+  return new Intl.DateTimeFormat("uk-UA", {
+    month: "long",
+  }).format(new Date());
+}
+
+const currentMonth = getCurrentMonth();
+
 function formatDate(date: Date) {
   return new Intl.DateTimeFormat("uk-UA", {
     day: "numeric",
@@ -74,7 +82,7 @@ export default function Schedule() {
               <ServiceCard
                 day="Субота"
                 date={saturdayDate}
-                icon="/icons/sprite.svg#icon-sun"
+                icon="/icons/sprite.svg#icon-moon"
                 services={[
                   {
                     time: "18:00",
@@ -86,7 +94,7 @@ export default function Schedule() {
               <ServiceCard
                 day="Неділя"
                 date={sundayDate}
-                icon="/icons/sprite.svg#icon-moon"
+                icon="/icons/sprite.svg#icon-sun"
                 services={[
                   {
                     time: "08:30",
@@ -101,7 +109,7 @@ export default function Schedule() {
             </div>
 
             <Button onClick={() => setIsModalOpen(true)}>
-              Повний розклад{" "}
+              Переглянути розклад на {currentMonth}{" "}
             </Button>
           </div>
         </Container>
