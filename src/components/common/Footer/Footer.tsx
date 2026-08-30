@@ -1,9 +1,24 @@
+"use client";
+
 import Image from "next/image";
 import styles from "./Footer.module.css";
 import Button from "../Button/Button";
 import Link from "next/link";
 
+import { usePathname } from "next/navigation";
+
 export default function Footer() {
+  const pathname = usePathname();
+
+  let contactText = "Залишились питання? З радістю відповімо!";
+
+  if (pathname === "/sacraments/baptism") {
+    contactText = "Для запису на Хрещення — зв’яжіться з настоятелем";
+  }
+
+  if (pathname === "/sacraments/marriage") {
+    contactText = "Для запису на Вінчання — зв’яжіться з настоятелем";
+  }
   return (
     <footer className={styles.footer}>
       <div className={styles.content}>
@@ -21,8 +36,9 @@ export default function Footer() {
           />
         </Link>
 
+        <p className={styles.question}>{contactText}</p>
         <p className={styles.question}>
-          Залишились питання? З радістю відповімо!
+          Настоятель ієрей Александр Смоктунович
         </p>
 
         <Button href="tel:+491728820478" className={styles.contactButton}>
@@ -31,7 +47,7 @@ export default function Footer() {
 
         <div className={styles.socials}>
           <a
-            href="#"
+            href="https://www.facebook.com/uocingolstadt/"
             target="_blank"
             rel="noopener noreferrer"
             aria-label="Facebook"
@@ -42,7 +58,7 @@ export default function Footer() {
           </a>
 
           <a
-            href="#"
+            href="https://chat.whatsapp.com/EiOSS2qLfnQHw9Ogpbr8YJ"
             target="_blank"
             rel="noopener noreferrer"
             aria-label="WhatsApp"
@@ -53,7 +69,7 @@ export default function Footer() {
           </a>
 
           <a
-            href="#"
+            href="https://t.me/uocingolstadt"
             target="_blank"
             rel="noopener noreferrer"
             aria-label="Telegram"
@@ -64,7 +80,7 @@ export default function Footer() {
           </a>
 
           <a
-            href="#"
+            href="https://www.instagram.com/uocingolstadt?igsh=MWsycTF0bHVjYnNqag%3D%3D&utm_source=qr"
             target="_blank"
             rel="noopener noreferrer"
             aria-label="Instagram"

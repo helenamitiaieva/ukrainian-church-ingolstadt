@@ -1,0 +1,188 @@
+.sacramentPage {
+  background-color: var(--color-milky);
+}
+
+.sectionWrapper {
+  width: 100%;
+  max-width: 450px;
+  margin-inline: auto;
+}
+
+.sectionTitle {
+  margin: 0 0 32px;
+
+  font-family: var(--font-viaoda);
+  font-size: 30px;
+  font-weight: 400;
+  line-height: 1.25;
+
+  text-align: center;
+  text-transform: uppercase;
+
+  color: var(--color-gold-dark);
+}
+
+.cards {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+
+  width: 100%;
+  max-width: 450px;
+  margin-inline: auto;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  align-items: center;
+  padding: 20px 15px;
+
+  border-radius: 20px;
+
+  background: #faf9f6;
+
+  box-shadow:
+    0 4px 4px rgba(0, 0, 0, 0.08),
+    0 12px 24px rgba(0, 0, 0, 0.04);
+}
+
+.title {
+  font-family: var(--font-family);
+  font-weight: 400;
+  font-size: 20px;
+  letter-spacing: 0.04em;
+  text-align: center;
+  text-transform: uppercase;
+  color: var(--color-gold-dark);
+}
+
+.cardTitle {
+  font-family: var(--font-main);
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 1.5;
+
+  text-align: center;
+  text-transform: uppercase;
+
+  color: var(--color-gold-dark);
+}
+
+.text {
+  margin: 0;
+  font-family: var(--font-family);
+  font-weight: 400;
+  font-size: 18px;
+  text-align: center;
+  color: var(--color-text);
+}
+
+.textWho,
+.textAbout {
+  font-size: 18px;
+  font-family: var(--font-family);
+  font-weight: 400;
+  line-height: 150%;
+  text-align: justify;
+  color: var(--color-text);
+}
+
+.titleAbout,
+.titleReq {
+  font-family: var(--font-family);
+  font-weight: 400;
+  font-size: 28px;
+  text-transform: uppercase;
+  text-align: center;
+  color: var(--color-gold-dark);
+}
+
+.titleReq {
+  margin-bottom: 20px;
+}
+
+.list {
+  margin: 0;
+  padding-left: 20px;
+}
+
+.list li {
+  padding-left: 4px;
+
+  font-size: 18px;
+  line-height: 1.65;
+}
+
+.list li::marker {
+  color: #d4a72c;
+}
+
+.goldTitle {
+  margin: 22px 0 8px;
+
+  font-family: var(--font-viaoda);
+  font-size: 20px;
+  font-weight: 400;
+  text-transform: uppercase;
+
+  color: var(--color-gold-dark);
+}
+
+.icon {
+  width: 64px;
+  height: 64px;
+
+  fill: var(--color-gold-dark);
+  color: var(--color-gold-dark);
+}
+
+.grid {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+
+  width: 100%;
+  max-width: 450px;
+  margin-inline: auto;
+}
+
+.preparationTitle {
+  font-weight: 400;
+  font-size: 20px;
+  color: var(--color-gold-dark);
+}
+
+.titleReqCard {
+  font-weight: 400;
+  font-size: 20px;
+  color: var(--color-gold-dark);
+
+  text-align: center;
+}
+
+.paragraphs {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.godparentsText {
+  color: var(--color-text);
+}
+
+@media (min-width: 768px) {
+  .sectionWrapper,
+  .cards {
+    max-width: 720px;
+  }
+
+  .sectionTitle {
+    font-size: 40px;
+  }
+
+  .card {
+    padding: 36px 32px;
+  }
+}

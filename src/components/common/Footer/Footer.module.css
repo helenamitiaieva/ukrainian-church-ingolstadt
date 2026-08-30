@@ -1,6 +1,6 @@
 .footer {
   width: 100%;
-  background: linear-gradient(90deg, #e6bd63 0%, #d6a943 100%);
+  background: var(--gradient-footer);
   color: #2f2a24;
 }
 
