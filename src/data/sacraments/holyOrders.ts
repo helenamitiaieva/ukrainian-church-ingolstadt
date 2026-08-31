@@ -3,7 +3,7 @@ import type { SacramentPageData } from "./types";
 export const holyOrdersData: SacramentPageData = {
   hero: {
     title: "Таїнство Священства",
-    subtitle: "Служіння Богові, Церкві та людям",
+    subtitle: "Покликання до служіння",
     image: "/images/sacraments/holy-orders.webp",
     alt: "Таїнство Священства",
     buttonText: "Дізнатися більше",
@@ -12,17 +12,17 @@ export const holyOrdersData: SacramentPageData = {
 
   features: [
     {
-      icon: "three-degrees",
+      icon: "icon-three",
       title: "Три ступені",
       text: "У Православній Церкві існують три ступені священства: диякон, пресвітер і єпископ.",
     },
     {
-      icon: "ordination",
+      icon: "icon-holy-orders",
       title: "Покладання рук",
       text: "Під час хіротонії єпископ покладає руки на обраного та молиться про дарування йому благодаті Святого Духа.",
     },
     {
-      icon: "axios",
+      icon: "icon-axios",
       title: "Аксіос!",
       text: "Після рукоположення лунає «Аксіос!» — «Достойний!», засвідчуючи прийняття новопоставленого священнослужителя.",
     },
@@ -34,8 +34,11 @@ export const holyOrdersData: SacramentPageData = {
   },
 
   details: {
-    title: "",
+    title: "Що таке Таїнство Священства?",
     cards: [
+      {
+        text: "Священство — Таїнство Православної Церкви, у якому через архієрейське рукоположення обраний отримує благодать Святого Духа для церковного служіння та поставляється на відповідний ступінь священної ієрархії.",
+      },
       {
         text: "Саме рукоположення також називають хіротонією — від грецького слова, пов’язаного з покладанням рук.",
       },

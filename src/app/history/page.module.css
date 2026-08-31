@@ -1,0 +1,49 @@
+.page {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+
+  padding: 140px 0 80px;
+
+  background: var(--color-milky);
+}
+
+.content {
+  width: 100%;
+  max-width: 700px;
+  margin-inline: auto;
+
+  text-align: center;
+}
+
+.label {
+  display: inline-block;
+  margin-bottom: 18px;
+
+  font-size: 14px;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+
+  color: var(--color-gold-dark);
+}
+
+.title {
+  margin: 0 0 24px;
+
+  font-family: var(--font-viaoda);
+  font-size: clamp(38px, 6vw, 64px);
+  font-weight: 400;
+  line-height: 1.1;
+
+  color: var(--color-text);
+}
+
+.text {
+  max-width: 600px;
+  margin: 0 auto;
+
+  font-size: 18px;
+  line-height: 1.7;
+
+  color: var(--color-text);
+}

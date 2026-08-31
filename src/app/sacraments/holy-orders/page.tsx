@@ -15,8 +15,6 @@ export default function HolyOrdersPage() {
 
       <SacramentFeatures items={holyOrdersData.features} />
 
-      <SacramentAbout data={holyOrdersData.about} />
-
       {holyOrdersData.details && (
         <SacramentCardSection data={holyOrdersData.details} />
       )}
