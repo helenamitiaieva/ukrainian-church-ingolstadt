@@ -41,7 +41,7 @@ export default function SacramentWho({ title, items }: SacramentWhoProps) {
               )}
 
               <ul className={styles.list}>
-                {item.preparationItems.map((listItem) => (
+                {item.preparationItems?.map((listItem) => (
                   <li key={listItem}>{listItem}</li>
                 ))}
               </ul>
