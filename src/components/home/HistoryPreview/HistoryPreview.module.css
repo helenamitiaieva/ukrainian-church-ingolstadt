@@ -32,6 +32,7 @@
   font-size: 20px;
   line-height: 1.5;
   text-align: center;
+
   color: var(--color-brown);
 }
 
@@ -56,13 +57,58 @@
 .description {
   margin-top: 15px;
   margin-bottom: 24px;
+
   text-align: center;
+
   font-family: var(--font-main);
   font-size: 20px;
   line-height: 1;
+
   color: var(--color-gold-dark);
 }
 
 .button {
   margin: 0 auto;
+}
+
+@media screen and (min-width: 768px) {
+  .heading {
+    gap: 10px;
+    margin-bottom: 32px;
+  }
+
+  .imageWrapper {
+    max-width: 620px;
+    aspect-ratio: 620 / 400;
+    border-radius: 20px;
+  }
+
+  .description {
+    max-width: 620px;
+
+    margin-top: 20px;
+    margin-right: auto;
+    margin-bottom: 32px;
+    margin-left: auto;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .heading {
+    gap: 12px;
+    margin-bottom: 40px;
+  }
+
+  .imageWrapper {
+    max-width: 900px;
+    aspect-ratio: 16 / 9;
+    border-radius: 24px;
+  }
+
+  .description {
+    max-width: 800px;
+
+    margin-top: 24px;
+    margin-bottom: 36px;
+  }
 }

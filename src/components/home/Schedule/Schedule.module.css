@@ -117,3 +117,23 @@
   flex-shrink: 0;
   fill: aliceblue;
 }
+
+@media screen and (min-width: 768px) {
+  .cards {
+    flex-direction: row;
+    max-width: 900px;
+  }
+
+  .churchDecor {
+    top: 0;
+    right: -35px;
+
+    width: 350px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .churchDecor {
+    width: 400px;
+  }
+}
