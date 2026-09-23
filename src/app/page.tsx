@@ -11,11 +11,13 @@ import Sacraments from "@/components/home/Sacraments/Sacraments";
 import FAQ from "@/components/common/FAQ/FAQ";
 import Contacts from "@/components/home/Contacts/Contacts";
 import { homeHeroData } from "@/data/home/hero";
+import AboutUs from "@/components/home/AboutUs/AboutUs";
 
 export default function Home() {
   return (
     <main id="top">
       <Hero {...homeHeroData} />
+      <AboutUs />
       <HistoryPreview />
       <Schedule />
       <Clergy />

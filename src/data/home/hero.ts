@@ -1,6 +1,6 @@
 export type HomeHeroData = {
   title: string;
-  subtitle: string;
+  subtitle?: string;
   image: string;
   alt: string;
   buttonText: string;
@@ -8,10 +8,9 @@ export type HomeHeroData = {
 };
 
 export const homeHeroData: HomeHeroData = {
-  title: "Українська Православна Церква в діаспорі",
-  subtitle: "Вселенський Патріархат Свято-Покровська Парафія м. Інгольштадт",
+  title: "Українська Православна Церква м. Інгольштадт",
   image: "/images/home/hero.webp",
   alt: "Свято-Покровська церква в Інгольштадті",
-  buttonText: "Зателефонувати настоятелю",
-  buttonHref: "tel:+491728820478",
+  buttonText: "Звʼяжіться з нами",
+  buttonHref: "/#contacts",
 };

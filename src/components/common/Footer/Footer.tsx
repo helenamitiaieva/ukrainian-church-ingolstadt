@@ -10,7 +10,7 @@ import { usePathname } from "next/navigation";
 export default function Footer() {
   const pathname = usePathname();
 
-  let contactText = "Залишились питання? З радістю відповімо!";
+  let contactText = "Залишились питання? Звʼяжіться з нами!";
 
   if (pathname === "/sacraments/baptism") {
     contactText = "Для запису на Хрещення — зв’яжіться з настоятелем";
@@ -37,9 +37,6 @@ export default function Footer() {
         </Link>
 
         <p className={styles.question}>{contactText}</p>
-        <p className={styles.question}>
-          Настоятель ієрей Александр Смоктунович
-        </p>
 
         <Button href="tel:+491728820478" className={styles.contactButton}>
           Зв’язатися з настоятелем

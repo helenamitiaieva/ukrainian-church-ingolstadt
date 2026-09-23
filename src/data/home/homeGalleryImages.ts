@@ -9,7 +9,7 @@ export const homeGalleryImages: GalleryImage[] = [
   {
     src: "/images/home/gallery/gallery-02.webp",
     alt: "Владика Даниїл під час святкування 80-річчя парафії",
-    description: "Святкування 80-річчя парафії за участі владики Даниїла",
+    description: "Святкування 80-річчя парафії за участі Владики Даниїла",
   },
   {
     src: "/images/home/gallery/gallery-03.webp",
@@ -23,7 +23,7 @@ export const homeGalleryImages: GalleryImage[] = [
   },
   {
     src: "/images/home/gallery/gallery-05.webp",
-    alt: "Богослужіння за участі владики Даниїла",
-    description: "Богослужіння за участі владики Даниїла",
+    alt: "Богослужіння за участі Владики Даниїла",
+    description: "Богослужіння за участі Владики Даниїла",
   },
 ];

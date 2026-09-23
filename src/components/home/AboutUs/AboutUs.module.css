@@ -1,0 +1,251 @@
+.about {
+  background-color: var(--color-milky);
+}
+
+.content {
+  width: 100%;
+}
+
+.heading {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+
+  margin-bottom: 24px;
+
+  text-align: center;
+}
+
+.title {
+  margin: 0;
+
+  font-family: var(--font-main);
+  font-size: 32px;
+  font-weight: 400;
+  line-height: 1.3;
+
+  text-transform: uppercase;
+
+  color: var(--color-text);
+}
+
+.subtitle {
+  margin: 0;
+
+  font-family: var(--font-main);
+  font-size: 25px;
+  font-weight: 400;
+  line-height: 1.5;
+
+  color: var(--color-gold-dark);
+}
+
+/* GRID */
+
+.grid {
+  display: grid;
+  gap: 10px;
+}
+
+/* IMAGE */
+
+.imageWrapper {
+  position: relative;
+
+  width: 100%;
+  height: 300px;
+
+  overflow: hidden;
+  border-radius: 12px;
+}
+
+.image {
+  object-fit: cover;
+  object-position: center;
+}
+
+/* RIGHT SIDE */
+
+.info {
+  display: grid;
+  gap: 10px;
+}
+
+.textCard,
+.accentCard {
+  border-radius: 12px;
+}
+
+.textCard {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 16px;
+
+  padding: 24px;
+
+  background-color: var(--color-milky-orange);
+}
+
+.textCard p {
+  margin: 0;
+
+  font-size: 20px;
+  line-height: 1.6;
+
+  color: var(--color-text);
+}
+
+.accentCard {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  min-height: 130px;
+
+  padding: 24px;
+
+  background: var(--gradient-button);
+}
+
+.accentCard p {
+  max-width: 280px;
+  margin: 0;
+
+  font-family: var(--font-main);
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 1.4;
+
+  text-align: center;
+
+  color: var(--color-milky);
+}
+
+/* BUTTON */
+
+.button {
+  margin: 24px auto 0;
+}
+
+/* =========================================
+   TABLET — 768px+
+========================================= */
+
+@media screen and (min-width: 768px) {
+  .heading {
+    gap: 10px;
+    margin-bottom: 32px;
+  }
+
+  .title {
+    font-size: 40px;
+  }
+
+  .subtitle {
+    font-size: 22px;
+  }
+
+  .grid {
+    grid-template-columns: 1.15fr 0.85fr;
+    gap: 12px;
+  }
+
+  .imageWrapper {
+    height: 480px;
+    border-radius: 16px;
+  }
+
+  .info {
+    grid-template-rows: 1fr 160px;
+    gap: 12px;
+  }
+
+  .textCard,
+  .accentCard {
+    border-radius: 16px;
+  }
+
+  .textCard {
+    padding: 32px;
+  }
+
+  .textCard p {
+    font-size: 16px;
+    line-height: 1.7;
+  }
+
+  .accentCard {
+    min-height: 0;
+    padding: 28px;
+  }
+
+  .accentCard p {
+    font-size: 27px;
+  }
+
+  .button {
+    margin-top: 32px;
+  }
+}
+
+/* =========================================
+   DESKTOP — 1200px+
+========================================= */
+
+@media screen and (min-width: 1200px) {
+  .heading {
+    margin-bottom: 40px;
+  }
+
+  .title {
+    font-size: 48px;
+  }
+
+  .subtitle {
+    font-size: 24px;
+  }
+
+  .grid {
+    grid-template-columns: 1.3fr 0.7fr;
+    gap: 16px;
+
+    max-width: 1200px;
+    margin-inline: auto;
+  }
+
+  .imageWrapper {
+    height: 560px;
+    border-radius: 20px;
+  }
+
+  .info {
+    grid-template-rows: 1fr 180px;
+    gap: 16px;
+  }
+
+  .textCard,
+  .accentCard {
+    border-radius: 20px;
+  }
+
+  .textCard {
+    padding: 40px;
+  }
+
+  .textCard p {
+    font-size: 18px;
+  }
+
+  .accentCard {
+    padding: 36px;
+  }
+
+  .accentCard p {
+    font-size: 30px;
+  }
+
+  .button {
+    margin-top: 36px;
+  }
+}

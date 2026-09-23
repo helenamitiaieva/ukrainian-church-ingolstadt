@@ -6,12 +6,12 @@ export const contactData = {
 
   address: {
     icon: "icon-map",
-    lines: ["Dreizehnerstr. 11, 85049", "Ingolstadt-Altstadt Nordost"],
+    lines: ["Ingolstadt"],
   },
 
   phone: {
     icon: "icon-call",
-    lines: ["+49 172 882 0478", "Настоятель ієрей", "Александр Смоктунович"],
+    lines: ["+49 172 882 0478", "Настоятель отець Олександр"],
   },
 
   email: {

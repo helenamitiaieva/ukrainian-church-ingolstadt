@@ -11,12 +11,12 @@ const clergy = [
   {
     image: "/images/home/clergy/alexander.webp",
     role: "Настоятель храму",
-    name: "Ієрей Олександр",
+    name: "Ієрей Олександр Смоктунович",
   },
   {
     image: "/images/home/clergy/pavlo.webp",
     role: "Священник",
-    name: "Ієрей Павло",
+    name: "Ієрей Павло Мітяєв",
   },
 ];
 
