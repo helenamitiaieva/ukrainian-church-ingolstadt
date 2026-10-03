@@ -7,7 +7,7 @@ import styles from "./Hero.module.css";
 
 type HeroProps = {
   title: string;
-  subtitle: string;
+  subtitle?: string;
   image: string;
   alt: string;
   buttonText: string;
