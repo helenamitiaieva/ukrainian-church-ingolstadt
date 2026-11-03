@@ -8,7 +8,7 @@ export type HomeHeroData = {
 };
 
 export const homeHeroData: HomeHeroData = {
-  title: "Українська Православна Церква м. Інгольштадт",
+  title: "Українська Православна Церква м.Інгольштадт",
   image: "/images/home/hero.webp",
   alt: "Свято-Покровська церква в Інгольштадті",
   buttonText: "Звʼяжіться з нами",
