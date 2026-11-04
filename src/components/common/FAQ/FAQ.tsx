@@ -14,7 +14,7 @@ export default function FAQ({ page, title = "Питання — відповід
   const items = faqData[page];
 
   return (
-    <section className={styles.faq}>
+    <section id="faq" className={styles.faq}>
       <div className={styles.container}>
         <h2 className={styles.title}>{title}</h2>
 

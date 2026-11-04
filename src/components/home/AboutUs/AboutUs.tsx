@@ -20,7 +20,7 @@ export default function About() {
                 євхаристичній єдності з усіма канонічними Православними
                 Помісними Церквами. Наша Українська Православна Церква належить
                 до Конференції Православних (канонічних) Єпископів у Німеччині
-                (Orthodoxe Bischofskonferenz in Deutschland (OBKD))
+                (Orthodoxe Bischofskonferenz in Deutschland (OBKD)).
               </p>
             </div>
           </div>

@@ -20,6 +20,7 @@ export const homeNavigation: NavItem[] = [
     label: "Таїнства",
     href: "/#sacraments",
   },
+  { label: "Питання та відповіді", href: "/#faq" },
   {
     label: "Контакти",
     href: "/#contacts",
