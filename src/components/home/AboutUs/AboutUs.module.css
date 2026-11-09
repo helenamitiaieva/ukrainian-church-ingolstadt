@@ -35,6 +35,7 @@
   font-family: var(--font-main);
   font-weight: 400;
   line-height: 1.5;
+  text-align: center;
 
   color: var(--color-brown);
 }
@@ -55,7 +56,7 @@
 
   align-items: center;
 
-  padding: 24px;
+  padding: 0 24px;
 }
 
 @media screen and (min-width: 768px) {
@@ -65,7 +66,7 @@
   }
 
   .title {
-    font-size: 30px;
+    font-size: 32px;
   }
 
   .subtitle {
@@ -89,7 +90,8 @@
   }
 
   .textCard {
-    padding: 32px;
+    padding: 0 32px;
+    padding-top: 0;
   }
 
   .accentCard {
@@ -112,7 +114,7 @@
   }
 
   .title {
-    font-size: 40px;
+    font-size: 32px;
   }
 
   .subtitle {
@@ -142,7 +144,7 @@
   }
 
   .textCard {
-    padding: 40px;
+    padding: 0 40px;
   }
 
   .accentCard {
