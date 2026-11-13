@@ -133,6 +133,10 @@
 }
 
 @media screen and (min-width: 1200px) {
+  .subtitle {
+    font-size: 24px;
+  }
+
   .churchDecor {
     width: 400px;
   }
